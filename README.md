@@ -44,7 +44,7 @@ Sigue estos pasos para completar y entregar tu evaluación:
     * Haz un **fork** de este repositorio a tu propia cuenta de GitHub.
     * **Clona** tu fork a tu máquina local para poder trabajar en los archivos.
         ```bash
-        git clone [https://github.com/NoeMelo/proyecto_analitico_test_ds_bbva.git](https://github.com/NoeMelo/proyecto_analitico_test_ds_bbva.git)
+        git clone https://github.com/NoeMelo/proyecto_analitico_test_ds_bbva.git
         ```
 
 2.  **Completar el Código** 💻
