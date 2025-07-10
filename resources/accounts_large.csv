@@ -1,0 +1,4 @@
+account_id,account_type,currency,interest_rate,active
+ACC001,Checking,EUR,0.01,Yes
+ACC002,Savings,EUR,0.05,Yes
+ACC003,Credit Card,EUR,0.18,Yes
