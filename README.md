@@ -1,6 +1,6 @@
-# 🧪 Evaluación Técnica: Procesamiento de Datos Bancarios
+# 🧪 Evaluación Técnica: Pipeline de Datos para Machine Learning
 
-Este repositorio contiene un ejercicio técnico para evaluar tus habilidades en la construcción de un pipeline de procesamiento de datos. El objetivo es completar un código preexistente para que pueda leer, integrar, limpiar y transformar un conjunto de datos bancarios.
+Bienvenido a la evaluación técnica. Tu misión es construir un pipeline de procesamiento de datos completo, un paso fundamental en cualquier proyecto de **Machine Learning**. El objetivo es transformar datos bancarios crudos, dispersos en varias tablas, en un único **tablón de características (feature table)** limpio y estructurado. Este tablón será el insumo principal para entrenar un modelo predictivo.
 
 ***
 ## 📊 Diccionario de Datos
@@ -48,12 +48,15 @@ Sigue estos pasos para completar y entregar tu evaluación:
         ```
 
 2.  **Completar el Código** 💻
-    * Tu tarea principal es rellenar la lógica faltante en los archivos del proyecto. Busca los comentarios `# TODO:` que te guiarán sobre qué hacer en cada sección.
-    * Los archivos a modificar son:
-        * `project/main.py`
-        * `project/business_logic/integration.py`
-        * `project/business_logic/cleaning.py`
-        * `project/business_logic/feature_engineering.py`
+    * Tu tarea principal es rellenar la lógica faltante en los archivos del proyecto. Busca los comentarios `# TODO:` que te guiarán. A continuación se describe la funcionalidad de cada archivo que debes completar:
+
+    * `project/main.py`: Este es el **orquestador principal**. Se encarga de ejecutar cada paso del pipeline en el orden correcto, desde la carga de datos hasta el guardado del resultado final.
+
+    * `project/business_logic/integration.py`: Su función es **consolidar los datos**. Aquí se deben unir las tres tablas (`customers`, `accounts`, `transactions`) para crear una vista única y completa de la información.
+
+    * `project/business_logic/cleaning.py`: Este es el paso de **calidad de datos**. Aquí debes transformar los datos para asegurar que sean consistentes y usables: manejar nulos, convertir tipos, y estandarizar valores.
+
+    * `project/business_logic/feature_engineering.py`: Aquí es donde **crearás valor para el modelo**. A partir de los datos limpios, generarás nuevas columnas (features) con información predictiva, como agregados y cálculos sobre el comportamiento del cliente.
 
 3.  **Entregar la Evaluación** ✅
     * Una vez que hayas completado todo el código, haz **commit** de tus cambios y súbelos (push) a tu repositorio fork.
@@ -66,5 +69,3 @@ Si deseas verificar que tu código funciona correctamente antes de entregarlo, p
 
 ```bash
 python project/main.py
-```
-## 
